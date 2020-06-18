@@ -12,9 +12,9 @@ As a Quality Service member I want to review the interactions that have been fla
 - It should have a layout of a chat shell.
 - A list of chats on the left and the detail of the conversation on the middle.
 - The list of chats has to be sorted by most recent on top.
-- The chat list item has to display the name, avatar and date.
 - If no chat has been selected, there is an empty screen on the middle section.
 - When a user selects a chat, the conversation loads on the middle section.
+- Conversation messages are sorted from oldest to recent. Most recent on the bottom.
 - Professional messages are on the right, Patient messages are on the left.
 - When a chat is selected the middle section has a header with the user name and the review status select.
 - The review status select can be Good, Bad or Not Reviewed.
