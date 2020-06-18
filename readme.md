@@ -6,7 +6,7 @@ As a Quality Service member I want to review the interactions that have been fla
 
 ## Setup
 - The list of chats to review can be found here: https://github.com/mediquo/frontend_test/blob/master/json/list.json
-- The detail of each chat can be found here: 
+- The detail of each chat can be found on messages key inside each room.
 
 ## Requirements
 - It should have a layout of a chat shell.
