@@ -5,11 +5,11 @@ Our team has been assigned with a task to create a tool for the Quality Service 
 As a Quality Service member I want to review the interactions that have been flagged in order to ensure the quality of the service.
 
 ## Setup
-The list of chats to review can be found here: 
-The detail of each chat can be found here:
+The list of chats to review can be found here: https://github.com/mediquo/frontend_test/blob/master/json/list.json
+The detail of each chat can be found here: 
 
 ## Requirements
-- It should have a layout of a chat shell (pic 1). 
+- It should have a layout of a chat shell.
 - A list of chats on the left and the detail of the conversation on the middle.
 - The list of chats has to be sorted by most recent on top.
 - The chat list item has to display the name, avatar and date.
