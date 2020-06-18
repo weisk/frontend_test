@@ -5,8 +5,8 @@ Our team has been assigned with a task to create a tool for the Quality Service 
 As a Quality Service member I want to review the interactions that have been flagged in order to ensure the quality of the service.
 
 ## Setup
-The list of chats to review can be found here: https://github.com/mediquo/frontend_test/blob/master/json/list.json
-The detail of each chat can be found here: 
+- The list of chats to review can be found here: https://github.com/mediquo/frontend_test/blob/master/json/list.json
+- The detail of each chat can be found here: 
 
 ## Requirements
 - It should have a layout of a chat shell.
