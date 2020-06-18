@@ -18,6 +18,15 @@ As a Quality Service member I want to review the interactions that have been fla
 - Professional messages are on the right, Patient messages are on the left.
 - When a chat is selected the middle section has a header with the user name and the review status select.
 - The review status select can be Good, Bad or Not Reviewed.
+- The sidebar has to be accurate with the design provided, the rest is up to you as long as the layout structure is met.
+
+### Sidebar
+The sidebar has to respect the given design. 
+![Sidebar](sidebar.png)
+
+### Chat Shell
+It contains two sections, the left sidebar and the middle content section.
+![Layout](layout.png)
 
 ## Finishing
 When your solution is complete, please send us back a git repository with your code to roger.cendros@mediquo.com and david.llort@mediquo.com
