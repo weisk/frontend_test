@@ -1,0 +1,78 @@
+{
+   "data":[
+      {
+         "room_id":"d93414a9-ecc4-3ef0-a3e4-92899b8755c6",
+         "user":{
+            "user_id":"32e63c11-026b-3525-a377-445c4ad9bfac",
+            "name":"Mrs. Fleta Bartell DVM",
+            "avatar":"https:\/\/api.adorable.io\/avatars\/250\/est.png"
+         },
+         "last_message":{
+            "sender_id":"32e63c11-026b-3525-a377-445c4ad9bfac",
+            "message":"Facere...",
+            "sent_at":"2020-05-21 04:53:10"
+         }
+      },
+      {
+         "room_id":"54c16943-a90a-3346-80f7-a760a337c19d",
+         "user":{
+            "user_id":"665e21d6-5593-3090-b888-c73e9f5edfd3",
+            "name":"Bethel Runolfsdottir DVM",
+            "avatar":"https:\/\/api.adorable.io\/avatars\/250\/sit.png"
+         },
+         "last_message": null
+      },
+      {
+         "room_id":"e3c409c8-f6c8-3a01-b8bb-e649761511fb",
+         "user":{
+            "user_id":"82bb8653-91da-3c04-876f-c6713cc93f28",
+            "name":"Amie Stracke Jr.",
+            "avatar":"https:\/\/api.adorable.io\/avatars\/250\/rerum.png"
+         },
+         "last_message":{
+            "sender_id":"2f161e9f-3380-32ec-a4f3-c8d9751a003d",
+            "message":"Necessitatibus.",
+            "sent_at":"2020-05-27 23:12:52"
+         }
+      },
+      {
+         "room_id":"abed680b-1e65-3856-8b50-feda65773519",
+         "user":{
+            "user_id":"b7406595-bbff-3827-a8ce-f1946541f6af",
+            "name":"Alva Bode",
+            "avatar":"https:\/\/api.adorable.io\/avatars\/250\/et.png"
+         },
+         "last_message":{
+            "sender_id":"75960562-1db6-307d-857d-2466aa762187",
+            "message":"Dolor assumenda aut dolor sit.",
+            "sent_at":"2020-05-20 09:02:04"
+         }
+      },
+      {
+         "room_id":"4593a47f-b404-3de8-8943-caeadb9534d0",
+         "user":{
+            "user_id":"589c513c-4772-349d-92d8-ee2ae489662d",
+            "name":"Andrew Kshlerin",
+            "avatar":"https:\/\/api.adorable.io\/avatars\/250\/eligendi.png"
+         },
+         "last_message":{
+            "sender_id":"589c513c-4772-349d-92d8-ee2ae489662d",
+            "message":"Consequuntur id dolor.",
+            "sent_at":"2020-06-13 20:17:57"
+         }
+      },
+      {
+         "room_id":"4971423f-697e-3c5c-b5cd-d376e20ad392",
+         "user":{
+            "user_id":"45d4ccc2-bdb1-3a8d-90f8-51cfd2aa1d96",
+            "name":"Sasha Halvorson",
+            "avatar":"https:\/\/api.adorable.io\/avatars\/250\/neque.png"
+         },
+         "last_message":{
+            "sender_id":"45d4ccc2-bdb1-3a8d-90f8-51cfd2aa1d96",
+            "message":"Quasi similique quia recusandae maxime debitis et.",
+            "sent_at":"2020-05-20 09:02:03"
+         }
+      }
+   ]
+}
