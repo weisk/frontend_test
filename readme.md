@@ -20,6 +20,8 @@ As a Quality Service member I want to review the interactions that have been fla
 - The review status select can be Good, Bad or Not Reviewed.
 - The sidebar has to be accurate with the design provided, the rest is up to you as long as the layout structure is met.
 
+In case of doubt, take the decisions you consider that meet our requirements and write down the reason behind that decision.
+
 ### Sidebar
 The sidebar has to respect the given design. 
 
