@@ -22,10 +22,12 @@ As a Quality Service member I want to review the interactions that have been fla
 
 ### Sidebar
 The sidebar has to respect the given design. 
+
 ![Sidebar](sidebar.png)
 
 ### Chat Shell
 It contains two sections, the left sidebar and the middle content section.
+
 ![Layout](layout.png)
 
 ## Finishing
