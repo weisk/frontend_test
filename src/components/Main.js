@@ -1,11 +1,11 @@
 import React, {useContext} from 'react';
-
+import l from 'lodash';
 import MessageList from 'components/MessageList';
 import { ChatContext } from 'context/chats.context';
 
 export default function Main() {
+  window._ = l;
   const [state, dispatch] = useContext(ChatContext);
-
   const { chatList, selectedChat } = state;
 
   return (

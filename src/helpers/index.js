@@ -14,8 +14,10 @@ export function sortChatsByDate(chats) {
         latest: sortedMessages[0].sent_at
       }
     })
-    .orderBy('latest', 'asc')
+    .orderBy('latest', 'desc')
     .value();
+
+  console.log(sortedChats);
   return sortedChats;
 }
 
@@ -37,7 +39,7 @@ export function formatDate(date) {
     return weekDays[d1.getDay()]
   } else {
     const dd = `00${d1.getDate()}`.slice(-2);
-    const mm = `00${d1.getMonth()}`.slice(-2);
+    const mm = `00${d1.getMonth()+1}`.slice(-2);
     return `${dd}/${mm}`;
   }
 }
