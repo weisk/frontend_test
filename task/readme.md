@@ -14,6 +14,8 @@ As a Quality Service member I want to review the interactions that have been fla
 - The list of chats has to be sorted by most recent on top.
 - If no chat has been selected, there is an empty screen on the middle section.
 - When a user selects a chat, the conversation loads on the middle section.
+
+
 - Conversation messages are sorted from oldest to recent. Most recent on the bottom.
 - Professional messages are on the right, Patient messages are on the left.
 - When a chat is selected the middle section has a header with the user name and the review status select.
@@ -23,7 +25,7 @@ As a Quality Service member I want to review the interactions that have been fla
 In case of doubt, take the decisions you consider that meet our requirements and write down the reason behind that decision.
 
 ### Sidebar
-The sidebar has to respect the given design. 
+The sidebar has to respect the given design.
 
 ![Sidebar](sidebar.png)
 

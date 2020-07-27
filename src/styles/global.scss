@@ -1,9 +1,33 @@
 * {
   padding: 0;
   margin: 0;
-  font-size: 18px;
 }
 
-.red {
-  color: red;
+html,
+body,
+#root {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+//   align-items: stretch;
+}
+
+.columns {
+  flex: 1;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }

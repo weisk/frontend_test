@@ -1,18 +1,27 @@
 import React from 'react';
 
-export default function Layout() {
+import Header from 'components/Header';
+import Sidebar from 'components/Sidebar';
+import Main from 'components/Main';
 
+import { ChatContextProvider } from 'context/chats.context';
+
+export default function Layout() {
   return (
-    <section className="section">
-      <div className="container">
-        <h1 className="title">
-          Hello World
-        </h1>
-        <p className="subtitle red">
-          My first website with <strong>Bulma</strong>!
-        </p>
-        <span className="what-the-fuck">I dont know what I just did.</span>
+    <>
+      <Header />
+
+      <div className="section">
+        <div className="columns">
+          <ChatContextProvider>
+            <Sidebar />
+
+            <Main />
+
+          </ChatContextProvider>
+
+        </div>
       </div>
-    </section>
+    </>
   );
 }

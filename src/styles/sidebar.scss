@@ -1,0 +1,62 @@
+.sidebar {
+  max-width: 300px;
+}
+
+.chat-list {
+  max-width: 300px;
+}
+
+.chat-list-item {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+  &.selected,
+  &:hover {
+    background-color: #549de5;
+    cursor: pointer;
+
+    .title,
+    .subtitle,
+    .chat-list-item-date {
+      color: white;
+    }
+  }
+
+
+  & > img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+  }
+
+  .chat-list-item-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-right: 20px;
+
+    & .title {
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    & .subtitle {
+      font-size: 14px;
+      font-weight: normal;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .chat-list-item-date {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 13px;
+    color: #999;
+  }
+}
