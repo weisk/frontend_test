@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "clsx": "^1.1.1",
     "http-proxy-middleware": "^1.0.5",
     "lodash": "^4.17.19",
     "react": "^16.13.1",

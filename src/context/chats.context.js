@@ -22,7 +22,7 @@ const reducer = (state, action) => {
     case "SELECT_CHAT":
       return {
         ...state,
-        selectedChat: action.payload
+        selectedChat: action.payload === state.selectedChat ? undefined : action.payload
       };
     default:
       throw new Error();

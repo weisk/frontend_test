@@ -11,6 +11,7 @@ $pink: #ff014d;
 $brown: #757763;
 $beige-light: #D0D1CD;
 $beige-lighter: #EFF0EB;
+$bone-white: #ECECEE;
 
 // global variables
 $family-sans-serif: "Nunito", sans-serif;
@@ -27,8 +28,11 @@ $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
 
+$column-gap: 1rem;
+
 @import "bulma/bulma";
 
 
 @import '/styles/global.scss';
 @import '/styles/sidebar.scss';
+@import '/styles/main.scss';

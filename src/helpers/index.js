@@ -22,16 +22,18 @@ export function sortChatsByDate(chats) {
 }
 
 const weekDays = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-export function formatDate(date) {
-  const d1 = new Date(date);
-  const d2 = new Date();
 
+export function humanizeTimeDiff(d0, d2 = new Date()) {
+  const d1 = (d0 instanceof Date) ? d0 : new Date(d0);
   const msDiff = d2.getTime() - d1.getTime();
   const sDiff = msDiff * 1000;
 
   const secondsPerDay = 60*60*24;
-
-  if (sDiff < secondsPerDay) {
+  if (sDiff < 60) {
+    return `${sDiff} seconds ago`;
+  } else if (sDiff < 3600) {
+    return `${parseInt(sDiff/3600)} minutes ago`;
+  } else if (sDiff < secondsPerDay) {
     return `${d1.getHours()}:${d1.getMinutes()}`;
   } else if (sDiff < secondsPerDay*2) {
     return 'Yesterday';
@@ -42,4 +44,8 @@ export function formatDate(date) {
     const mm = `00${d1.getMonth()+1}`.slice(-2);
     return `${dd}/${mm}`;
   }
+}
+
+export function parseMessage(msg) {
+  const date = humanizeTimeDiff(msg)
 }

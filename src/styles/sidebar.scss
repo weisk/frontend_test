@@ -1,9 +1,11 @@
 .sidebar {
+  min-width: 300px;
   max-width: 300px;
 }
 
-.chat-list {
-  max-width: 300px;
+.sidebar-right {
+  flex-grow: 0;
+  max-width: 200px;
 }
 
 .chat-list-item {
@@ -11,9 +13,16 @@
   flex-direction: row;
   padding: 10px;
 
+  &.selected {
+    background-color: #549de5;
+  }
+
+  &:hover:not(.selected) {
+    background-color: lighten(#549de5,15%);
+  }
+
   &.selected,
   &:hover {
-    background-color: #549de5;
     cursor: pointer;
 
     .title,

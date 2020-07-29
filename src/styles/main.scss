@@ -1,0 +1,28 @@
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  .chat-container {
+    flex: 1;
+    overflow-y: scroll;
+  }
+
+  .message-list {
+  }
+
+  // $green: #86BB71;
+  // $blue: #94C2ED;
+  // $orange: #E38968;
+  // $gray: #92959E;
+
+  .chat-header {
+    background-color: $beige-light;
+  }
+
+  .chat-container {
+    background-color: $bone-white;
+    border: 1px solid darken($bone-white,15%);
+  }
+}
+

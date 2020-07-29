@@ -6,7 +6,7 @@ export default function Header() {
   const [count, setCount] = useState(0);
 
   return (
-    <nav className="navbar is-transparent has-shadow is-spaced" role="navigation" aria-label="main navigation">
+    <nav className="navbar has-shadow is-spaced" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="https://mediquo.com">
           <img src={Logo} width="112" height="28"/>

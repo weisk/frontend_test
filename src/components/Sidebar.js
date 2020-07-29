@@ -27,7 +27,7 @@ export default function Sidebar() {
 
       <div className="chat-list">
         {state.chatList.map((chat, i) => (
-          <ChatListItem chat={chat} key={`chat-${i}`} onClick={(evt) => selectChat(i)}/>
+          <ChatListItem chat={chat} key={`chat-${i}`} selected={state.selectedChat === i} onClick={(evt) => selectChat(i)}/>
         ))}
       </div>
     </aside>

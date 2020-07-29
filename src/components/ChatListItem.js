@@ -1,6 +1,7 @@
 import React from 'react';
+import clsx from 'clsx';
 
-import { formatDate } from 'helpers';
+import { humanizeTimeDiff } from 'helpers';
 
 export default function ChatListItem(props) {
   const {
@@ -13,7 +14,7 @@ export default function ChatListItem(props) {
   const lastMessage = chat.messages[0];
 
   return (
-    <div className="chat-list-item" onClick={onClick}>
+    <div className={clsx('chat-list-item', {selected})} onClick={onClick}>
       <img src={avatar} />
 
       <div className="chat-list-item-text">
@@ -22,7 +23,7 @@ export default function ChatListItem(props) {
       </div>
 
       <div className="chat-list-item-date">
-        { formatDate(lastMessage.sent_at) }
+        { humanizeTimeDiff(lastMessage.sent_at) }
       </div>
     </div>
   );
