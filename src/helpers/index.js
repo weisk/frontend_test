@@ -1,17 +1,18 @@
 import {
   chain,
-  orderBy
+  orderBy,
+  last
 } from 'lodash';
 
 export function sortChatsByDate(chats) {
   const sortedChats = chain(chats)
     .filter((chat) => chat.messages && chat.messages.length )
     .map((chat) => {
-      let sortedMessages = orderBy(chat.messages, 'sent_at', 'desc');
+      let sortedMessages = orderBy(chat.messages, 'sent_at', 'asc');
       return {
         ...chat,
         messages: sortedMessages,
-        latest: sortedMessages[0].sent_at
+        latest: last(sortedMessages).sent_at
       }
     })
     .orderBy('latest', 'desc')
@@ -24,7 +25,7 @@ export function sortChatsByDate(chats) {
 export function humanizeTime(d0) {
   const d = (d0 instanceof Date) ? d0 : new Date(d0);
   const options = {
-    year: 'numeric', month: 'numeric', day: 'numeric',
+    year: 'numeric', month: 'short', day: 'numeric',
     hour: 'numeric', minute: 'numeric', second: 'numeric',
     hour12: false,
   };
