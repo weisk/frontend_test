@@ -21,9 +21,7 @@ export default function Main() {
                 <img className="is-rounded" src={user.avatar} width="64" height="64" alt="avatar" />
               </figure>
 
-              <div class="chat-about">
-                <div class="chat-with">Chat with {user.name}</div>
-              </div>
+              <div className="chat-with">Chat with <strong>{user.name}</strong></div>
             </div>
           ) : (
             <div className="level-item">
@@ -35,9 +33,12 @@ export default function Main() {
 
         { showChat ? (
         <div className="level-right">
-          <div className="level-item">
-            Please rate this professional
-            <i class="fa fa-star"></i>
+          <div className="level-item rating">
+            Please rate this professional:
+            <div className="stars">
+              <span className="bad"><i className="fa fa-lg fa-frown"></i></span>
+              <span className="good"><i className="fa fa-lg fa-smile-beam"></i></span>
+            </div>
           </div>
         </div>
         ) : null }

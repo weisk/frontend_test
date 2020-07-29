@@ -8,21 +8,68 @@
     overflow-y: scroll;
   }
 
-  .message-list {
-  }
 
-  // $green: #86BB71;
-  // $blue: #94C2ED;
-  // $orange: #E38968;
-  // $gray: #92959E;
 
   .chat-header {
     background-color: $beige-light;
+
+    .image {
+      margin-right: 10px;
+    }
+
+    .chat-with {
+      align-self: flex-start;
+    }
   }
 
   .chat-container {
     background-color: $bone-white;
     border: 1px solid darken($bone-white,15%);
+    display: flex;
+  }
+
+  .chat-message-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .chat-message {
+    display: flex;
+    flex-direction: column;
+
+    &.patient {
+      align-self: flex-start;
+    }
+    &.doctor {
+      align-self: flex-end;
+      align-items: flex-end;
+    }
+
+    span.light {
+      color: lighten($black2,25%);
+      font-size: 12px;
+    }
+  }
+
+  .rating {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: $black2;
+
+    svg {
+      color: $brown;
+      margin-left: 10px;
+    }
+    .bad:hover {
+      cursor: pointer;
+      svg { color: $red1; }
+    }
+    .good:hover {
+      cursor: pointer;
+      svg { color: $green2; }
+    }
   }
 }
 

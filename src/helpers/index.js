@@ -21,8 +21,17 @@ export function sortChatsByDate(chats) {
   return sortedChats;
 }
 
-const weekDays = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+export function humanizeTime(d0) {
+  const d = (d0 instanceof Date) ? d0 : new Date(d0);
+  const options = {
+    year: 'numeric', month: 'numeric', day: 'numeric',
+    hour: 'numeric', minute: 'numeric', second: 'numeric',
+    hour12: false,
+  };
+  return Intl.DateTimeFormat('default', options).format(d);
+}
 
+const weekDays = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
 export function humanizeTimeDiff(d0, d2 = new Date()) {
   const d1 = (d0 instanceof Date) ? d0 : new Date(d0);
   const msDiff = d2.getTime() - d1.getTime();
